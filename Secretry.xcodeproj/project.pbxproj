@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D79E0F981CA8C4680040BD5F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E0F971CA8C4680040BD5F /* RSAEncryptor.m */; };
+		D79E0FA51CA8D9690040BD5F /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = D79E0FA41CA8D9690040BD5F /* public_key.der */; };
+		D79E0FA71CA8D9980040BD5F /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = D79E0FA61CA8D9980040BD5F /* private_key.p12 */; };
+		D7A8A4971C925C4A0086958D /* Descrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8A4961C925C4A0086958D /* Descrypt.m */; };
+		D7A8A49D1C9265640086958D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8A49B1C9265640086958D /* GTMBase64.m */; };
+		D7A8A4A01C9268000086958D /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A8A49F1C9268000086958D /* MD5.m */; };
 		D7C28FC91C914FC600EA512D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C28FC81C914FC600EA512D /* main.m */; };
 		D7C28FCC1C914FC600EA512D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C28FCB1C914FC600EA512D /* AppDelegate.m */; };
 		D7C28FCF1C914FC600EA512D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C28FCE1C914FC600EA512D /* ViewController.m */; };
-		D7C28FD21C914FC600EA512D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C28FD01C914FC600EA512D /* Main.storyboard */; };
 		D7C28FD41C914FC600EA512D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C28FD31C914FC600EA512D /* Assets.xcassets */; };
-		D7C28FD71C914FC600EA512D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C28FD51C914FC600EA512D /* LaunchScreen.storyboard */; };
 		D7C28FE21C914FC600EA512D /* SecretryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C28FE11C914FC600EA512D /* SecretryTests.m */; };
 		D7C28FED1C914FC600EA512D /* SecretryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C28FEC1C914FC600EA512D /* SecretryUITests.m */; };
+		D7C28FFB1C9152BF00EA512D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7C28FFA1C9152BF00EA512D /* Images.xcassets */; };
+		D7C290011C9155B500EA512D /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C290001C9155B500EA512D /* Base64.m */; };
+		D7C290071C91692B00EA512D /* NSData+CCCryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C290061C91692B00EA512D /* NSData+CCCryptUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +42,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D79E0F961CA8C4680040BD5F /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		D79E0F971CA8C4680040BD5F /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		D79E0F991CA8C94F0040BD5F /* RSAKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAKey.h; sourceTree = "<group>"; };
+		D79E0FA21CA8D5320040BD5F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D79E0FA41CA8D9690040BD5F /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		D79E0FA61CA8D9980040BD5F /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		D7A8A4951C925C4A0086958D /* Descrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Descrypt.h; sourceTree = "<group>"; };
+		D7A8A4961C925C4A0086958D /* Descrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Descrypt.m; sourceTree = "<group>"; };
+		D7A8A49A1C9265640086958D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		D7A8A49B1C9265640086958D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		D7A8A49C1C9265640086958D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		D7A8A49E1C9268000086958D /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		D7A8A49F1C9268000086958D /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
 		D7C28FC41C914FC600EA512D /* Secretry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Secretry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C28FC81C914FC600EA512D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7C28FCA1C914FC600EA512D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7C28FCB1C914FC600EA512D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7C28FCD1C914FC600EA512D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D7C28FCE1C914FC600EA512D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D7C28FD11C914FC600EA512D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7C28FD31C914FC600EA512D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D7C28FD61C914FC600EA512D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7C28FD81C914FC600EA512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7C28FDD1C914FC600EA512D /* SecretryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C28FE11C914FC600EA512D /* SecretryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretryTests.m; sourceTree = "<group>"; };
@@ -51,6 +69,11 @@
 		D7C28FE81C914FC600EA512D /* SecretryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C28FEC1C914FC600EA512D /* SecretryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretryUITests.m; sourceTree = "<group>"; };
 		D7C28FEE1C914FC600EA512D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C28FFA1C9152BF00EA512D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7C28FFF1C9155B500EA512D /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		D7C290001C9155B500EA512D /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		D7C290051C91692B00EA512D /* NSData+CCCryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CCCryptUtil.h"; sourceTree = "<group>"; };
+		D7C290061C91692B00EA512D /* NSData+CCCryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CCCryptUtil.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +101,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7A8A4991C9265550086958D /* gitbase64 */ = {
+			isa = PBXGroup;
+			children = (
+				D7A8A49A1C9265640086958D /* GTMBase64.h */,
+				D7A8A49B1C9265640086958D /* GTMBase64.m */,
+				D7A8A49C1C9265640086958D /* GTMDefines.h */,
+			);
+			name = gitbase64;
+			sourceTree = "<group>";
+		};
 		D7C28FBB1C914FC600EA512D = {
 			isa = PBXGroup;
 			children = (
+				D79E0FA21CA8D5320040BD5F /* Security.framework */,
 				D7C28FC61C914FC600EA512D /* Secretry */,
 				D7C28FE01C914FC600EA512D /* SecretryTests */,
 				D7C28FEB1C914FC600EA512D /* SecretryUITests */,
@@ -101,15 +135,28 @@
 		D7C28FC61C914FC600EA512D /* Secretry */ = {
 			isa = PBXGroup;
 			children = (
+				D79E0FA61CA8D9980040BD5F /* private_key.p12 */,
+				D79E0FA41CA8D9690040BD5F /* public_key.der */,
+				D7A8A4991C9265550086958D /* gitbase64 */,
 				D7C28FCA1C914FC600EA512D /* AppDelegate.h */,
 				D7C28FCB1C914FC600EA512D /* AppDelegate.m */,
 				D7C28FCD1C914FC600EA512D /* ViewController.h */,
 				D7C28FCE1C914FC600EA512D /* ViewController.m */,
-				D7C28FD01C914FC600EA512D /* Main.storyboard */,
 				D7C28FD31C914FC600EA512D /* Assets.xcassets */,
-				D7C28FD51C914FC600EA512D /* LaunchScreen.storyboard */,
 				D7C28FD81C914FC600EA512D /* Info.plist */,
+				D7C28FFA1C9152BF00EA512D /* Images.xcassets */,
 				D7C28FC71C914FC600EA512D /* Supporting Files */,
+				D7C28FFF1C9155B500EA512D /* Base64.h */,
+				D7C290001C9155B500EA512D /* Base64.m */,
+				D7C290051C91692B00EA512D /* NSData+CCCryptUtil.h */,
+				D7C290061C91692B00EA512D /* NSData+CCCryptUtil.m */,
+				D7A8A4951C925C4A0086958D /* Descrypt.h */,
+				D7A8A4961C925C4A0086958D /* Descrypt.m */,
+				D7A8A49E1C9268000086958D /* MD5.h */,
+				D7A8A49F1C9268000086958D /* MD5.m */,
+				D79E0F961CA8C4680040BD5F /* RSAEncryptor.h */,
+				D79E0F971CA8C4680040BD5F /* RSAEncryptor.m */,
+				D79E0F991CA8C94F0040BD5F /* RSAKey.h */,
 			);
 			path = Secretry;
 			sourceTree = "<group>";
@@ -243,9 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C28FD71C914FC600EA512D /* LaunchScreen.storyboard in Resources */,
 				D7C28FD41C914FC600EA512D /* Assets.xcassets in Resources */,
-				D7C28FD21C914FC600EA512D /* Main.storyboard in Resources */,
+				D7C28FFB1C9152BF00EA512D /* Images.xcassets in Resources */,
+				D79E0FA51CA8D9690040BD5F /* public_key.der in Resources */,
+				D79E0FA71CA8D9980040BD5F /* private_key.p12 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C28FCF1C914FC600EA512D /* ViewController.m in Sources */,
+				D7C290071C91692B00EA512D /* NSData+CCCryptUtil.m in Sources */,
 				D7C28FCC1C914FC600EA512D /* AppDelegate.m in Sources */,
+				D7A8A4971C925C4A0086958D /* Descrypt.m in Sources */,
 				D7C28FC91C914FC600EA512D /* main.m in Sources */,
+				D79E0F981CA8C4680040BD5F /* RSAEncryptor.m in Sources */,
+				D7C290011C9155B500EA512D /* Base64.m in Sources */,
+				D7A8A4A01C9268000086958D /* MD5.m in Sources */,
+				D7A8A49D1C9265640086958D /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,25 +360,6 @@
 			targetProxy = D7C28FE91C914FC600EA512D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D7C28FD01C914FC600EA512D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7C28FD11C914FC600EA512D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D7C28FD51C914FC600EA512D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7C28FD61C914FC600EA512D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D7C28FEF1C914FC600EA512D /* Debug */ = {
@@ -411,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				INFOPLIST_FILE = Secretry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiajiabang.Secretry;
@@ -422,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				INFOPLIST_FILE = Secretry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiajiabang.Secretry;
@@ -496,6 +533,7 @@
 				D7C28FF31C914FC600EA512D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C28FF41C914FC600EA512D /* Build configuration list for PBXNativeTarget "SecretryTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +542,7 @@
 				D7C28FF61C914FC600EA512D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C28FF71C914FC600EA512D /* Build configuration list for PBXNativeTarget "SecretryUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +551,7 @@
 				D7C28FF91C914FC600EA512D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
